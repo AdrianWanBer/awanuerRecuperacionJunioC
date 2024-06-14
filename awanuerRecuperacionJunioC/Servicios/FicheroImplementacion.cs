@@ -29,11 +29,11 @@ namespace awanuerRecuperacionJunioC.Servicios
 
 
 
-                    campos = sr.ReadToEnd().Split(':');
-                for (int i = 0; i < campos.Length - 1; i++)
+                campos = sr.ReadToEnd().Split(':');
+                /*for (int i = 0; i < campos.Length - 1; i++)
                 {
                     Console.WriteLine(campos[i].ToString()); ;
-                }
+                }*/
                 //Problema -->
                 for (int j = 0; j < 4; j++)
                 {
@@ -57,6 +57,31 @@ namespace awanuerRecuperacionJunioC.Servicios
             {
                 throw ex;
                 Console.WriteLine("Error-123: Fallo en la carga --> ".Concat(ex.Message));
+            }
+
+
+        }
+
+        /// <summary>
+        /// Metodo de la implementacion encargado de escribir los logs
+        /// awb
+        /// </summary>
+        public void ficheroLog()
+        {
+            try
+            {
+                DateTime fecha = new DateTime();
+                string fechaString = fecha.ToString("dd-MM-yyyy");
+                StreamWriter sw = new StreamWriter("C:\\Users\\Adrian\\source\\repos\\awanuerRecuperacionJunioC\\awanuerRecuperacionJunioC\\Logs\\log-" + fechaString + ".txt") ;
+                foreach (string log in program.logs)
+                {
+                    sw.WriteLine(log);
+                }
+                sw.Close();
+            }
+            catch (Exception ex)
+            {
+
             }
         }
     }

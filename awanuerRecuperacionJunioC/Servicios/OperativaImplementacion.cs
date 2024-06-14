@@ -62,6 +62,14 @@ namespace awanuerRecuperacionJunioC.Servicios
                 throw ex;
             }
         }
+        /// <summary>
+        /// Metodo que ejecuta la operativa de los historicos
+        /// awb
+        /// </summary>
+        public void esHistorico()
+        {
+            Console.WriteLine("N. Históricos: ");
+        }
 
 
     }

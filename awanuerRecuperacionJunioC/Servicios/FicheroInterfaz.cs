@@ -8,7 +8,13 @@
     {
         /// <summary>
         /// Metodo que se encarga de la carga inicial
+        /// awb
         /// </summary>
         public void cargaInicialFichero();
+        /// <summary>
+        /// Metodo encargado de escribir el log
+        /// awb
+        /// </summary>
+        public void ficheroLog();
     }
 }

@@ -11,5 +11,10 @@
         /// awb
         /// </summary>
         public void darAltaPropietario();
+        /// <summary>
+        /// Metodo encargado de mostrar los historicos
+        /// awb
+        /// </summary>
+        public void esHistorico();
     }
 }
