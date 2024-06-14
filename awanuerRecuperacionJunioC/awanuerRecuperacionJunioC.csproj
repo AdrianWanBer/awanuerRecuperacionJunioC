@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Logs\" />
-    <Folder Include="Utilidades\" />
   </ItemGroup>
 
 </Project>
