@@ -40,6 +40,7 @@ namespace awanuerRecuperacionJunioC.Controladores
                         break;
                     case 1: //Mostrar numero historicos
                         logs.Add("Se muestra el historico");
+                        oi.esHistorico();
                         break;
                     case 2: //Dar alta nuevo propietario
                         logs.Add("Se da alta un nuevo propietario");

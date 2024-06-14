@@ -34,7 +34,6 @@ namespace awanuerRecuperacionJunioC.Servicios
                 {
                     Console.WriteLine(campos[i].ToString()); ;
                 }*/
-                //Problema -->
                 for (int j = 0; j < 4; j++)
                 {
                     VehiculoDto nuevoVehiculo = new VehiculoDto();
@@ -43,7 +42,7 @@ namespace awanuerRecuperacionJunioC.Servicios
                     string dni = campos[aux3];
                     string fechaCompra = campos[aux4];
                     program.listaVehiculos.Add(nuevoVehiculo);
-                    //PropietarioDto nuevoPropietario = new PropietarioDto(j, dni, fechaCompra, "", false);
+                    PropietarioDto nuevoPropietario = new PropietarioDto(j, dni, fechaCompra, "", false);
 
                     //Suma aux
                     aux1 = aux1 + 4;
